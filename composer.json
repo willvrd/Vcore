@@ -1,0 +1,44 @@
+{
+    "name": "willvrd/vcore-module",
+    "description": "Vcore Module - VGreen Application",
+    "type": "vgreen-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "William Verde",
+            "email": "wavutes@gmail.com",
+            "homepage": "https://ingwilliamverde.wordpress.com/"
+        }
+    ],
+     "require": {
+        "php": ">=7.0.0",
+        "composer/installers": "~1.0",
+        "willvrd/vgreen-installer": "*",
+        "nwidart/laravel-modules": "~7.1",
+        "mcamara/laravel-localization": "~1.5",
+        "astrotomic/laravel-translatable": "~11.8",
+        "cviebrock/eloquent-sluggable": "~7.0",
+        "laracasts/presenter": "~0.2.3"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "~3.3",
+        "phpunit/phpunit": "~8.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Vcore\\Providers\\VcoreServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Vcore\\": ""
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

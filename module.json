@@ -1,0 +1,16 @@
+{
+    "name": "Vcore",
+    "alias": "vcore",
+    "description": "Vcore Module",
+    "version": "0.0.1",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Vcore\\Providers\\VcoreServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "helpers.php"
+    ],
+    "requires": []
+}
