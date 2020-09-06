@@ -7,16 +7,27 @@ composer require willvrd/vcore-module
 
 ## Steps
 
-    1. Install laravel localization (Config Files, Register Middleware)
+    1. Set up laravel localization (Config Files, Register Middleware)
 https://github.com/mcamara/laravel-localization#installation
 
-    2. Change true 'hideDefaultLocaleInURL' => true
+    2. On config/laravellocalization.php, change true 'hideDefaultLocaleInURL' => true
 
-    3. Publish config/translatable.php
+    3. Publish config/translatable.php: 
 ```bash  
 php artisan vendor:publish --tag=translatable
 ``` 
-        
+	4. Run NPM to compile your fresh scaffolding
+```bash
+npm install && npm run dev
+```
+       
+## Extras
+
+### Debug Bar
+```bash
+composer require barryvdh/laravel-debugbar --dev
+```	
+	 
 ## Assets Module
 
     - Install and Setup:
